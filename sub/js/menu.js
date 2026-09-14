@@ -1,0 +1,2 @@
+const products={bread:[['모르사 프레첼','6,700'],['피스타치오 크림 바게트','8,000'],['클래식 샌드위치','8,500'],['월넛 파운드','8,800']],fruit:[['무화과 타르트','4,900'],['베리 요거트 케이크','8,300'],['망고 브리오슈','9,500'],['애플 파이','6,100']],beverage:[['피스타치오 라떼','6,700'],['아인슈페너','7,600'],['라임 민트 티','6,700'],['레몬 요거트 스무디','7,900']]};
+document.querySelectorAll('.cards').forEach(cards=>{const type=cards.dataset.category;cards.innerHTML=products[type].map((p,i)=>`<article class="product-card"><img src="assets/img/menu/${type}${i+1}.png" alt="${p[0]}"><h3>${p[0]}</h3><p>${p[1]}</p></article>`).join('')});

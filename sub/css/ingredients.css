@@ -1,0 +1,175 @@
+.ingredients-hero {
+    height: 780px;
+    background: url('../assets/img/ingredients/video.png') center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.ingredients-hero h1 {
+    font: 600 44px MaruBuri, serif
+}
+
+.ingredients-hero p {
+    font-size: 18px;
+    line-height: 1.55;
+    margin-top: 20px
+}
+
+.values {
+    height: 1385px;
+    background: #fff9e9;
+    position: relative;
+    overflow: hidden
+}
+
+.values:after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    top: 80px;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 224, 153, .38), transparent 67%)
+}
+
+.values .inner {
+    position: relative;
+    z-index: 1;
+    padding-top: 105px;
+    text-align: center
+}
+
+.values h2 {
+    font: 36px MaruBuri, serif
+}
+
+.subtitle {
+    margin-top: 15px
+}
+
+.value-orbits {
+    position: relative;
+    height: 600px;
+    margin-top: 50px
+}
+
+.value-orbits img {
+    position: absolute;
+    filter: drop-shadow(8px 10px 10px rgba(61, 40, 31, .2))
+}
+
+.value-orbits .nature {
+    width: 442px;
+    left: 180px;
+    top: 190px
+}
+
+.value-orbits .time {
+    width: 446px;
+    left: 527px;
+    top: 0
+}
+
+.value-orbits .ingredient {
+    width: 462px;
+    right: 170px;
+    top: 200px
+}
+
+.value-copy {
+    margin-top: -40px
+}
+
+.value-copy h3 {
+    font: 24px MaruBuri, serif
+}
+
+.value-copy p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 15px
+}
+
+.balance {
+    width: 760px;
+    height: 240px;
+    margin: 65px auto 0;
+    display: flex;
+    text-align: left;
+    align-items: center
+}
+
+.balance>div {
+    width: 340px
+}
+
+.balance h3 {
+    font: 22px MaruBuri, serif
+}
+
+.balance p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 18px 0
+}
+
+.balance small {
+    font: 13px MaruBuri, serif
+}
+
+.balance img {
+    width: 420px;
+    height: 240px
+}
+
+.source {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff
+}
+
+.source-one {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .55), transparent 55%), url('../assets/img/ingredients/visual1.png')
+}
+
+.source-two {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .42), transparent 55%), url('../assets/img/ingredients/visual2.png')
+}
+
+.source-three {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .45), transparent 55%), url('../assets/img/ingredients/visual3.png')
+}
+
+.source-copy {
+    position: absolute;
+    left: calc(50% - 750px);
+    top: 105px
+}
+
+.source-copy h2 {
+    font: 28px MaruBuri, serif
+}
+
+.source-copy h3 {
+    font-size: 18px;
+    margin: 15px 0
+}
+
+.source-copy p {
+    font-size: 15px;
+    line-height: 1.65
+}
+
+.source>span {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    font: 15px MaruBuri, serif
+}

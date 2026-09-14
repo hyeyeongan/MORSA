@@ -1,0 +1,473 @@
+.about-hero {
+    height: 780px;
+    background: url('../assets/img/about/visual1.png') center/cover no-repeat;
+    position: relative
+}
+
+.hero-copy {
+    width: 1500px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 116px
+}
+
+.hero-copy h1 {
+    font: 600 36px MaruBuri, serif
+}
+
+.hero-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 38px;
+    font-size: 20px
+}
+
+.pretzel-mark {
+    width: 348px;
+    height: 348px;
+    margin: 24px auto 0;
+    border-radius: 50%
+}
+
+.hero-copy>p {
+    font: 600 55px/53px MaruBuri, serif;
+    margin-top: -78px
+}
+
+.hero-copy em {
+    font-style: normal;
+    margin-left: 140px
+}
+
+.story {
+    height: 1482px;
+    position: relative
+}
+
+.story-grid {
+    position: relative;
+    height: 100%
+}
+
+.story-grid img {
+    position: absolute
+}
+
+.story-one {
+    width: 357px;
+    height: 410px;
+    left: 110px;
+    top: 0;
+    object-fit: cover
+}
+
+.story-two {
+    width: 649px;
+    height: 774px;
+    right: 90px;
+    top: 0
+}
+
+.story-three {
+    width: 740px;
+    height: 412px;
+    left: 0;
+    top: 701px
+}
+
+.story-four {
+    width: 570px;
+    height: 236px;
+    left: 76px;
+    top: 1170px;
+    object-fit: contain
+}
+
+.story-copy {
+    position: absolute;
+    font-weight: 300
+}
+
+.story-copy h2 {
+    font: 600 28px MaruBuri, serif;
+    line-height: 1.4
+}
+
+.story-copy p {
+    font-size: 18px;
+    line-height: 1.55;
+    border-left: 5px solid #3d281f;
+    padding-left: 28px;
+    margin-top: 25px
+}
+
+.story-copy.first {
+    left: 92px;
+    top: 465px
+}
+
+.story-copy.second {
+    right: 170px;
+    top: 1010px
+}
+
+.story-copy.second h3 {
+    font: 600 20px MaruBuri, serif;
+    margin-top: 7px
+}
+
+.belief {
+    height: 943px;
+    background: #fdfaeb;
+    padding-top: 48px
+}
+
+.belief-title {
+    text-align: center;
+    height: 200px
+}
+
+.belief-title h2 {
+    font-size: 48px;
+    font-weight: 500
+}
+
+.belief-title span {
+    display: block;
+    margin-top: 52px
+}
+
+.belief-banner {
+    height: 586px;
+    background: url('../assets/img/about/visual2.png') center/cover no-repeat;
+    color: #fff;
+    position: relative
+}
+
+.belief-banner>div {
+    position: absolute;
+    left: calc(50% - 818px);
+    top: 155px
+}
+
+.belief-banner h3 {
+    font: 600 78px MaruBuri, serif
+}
+
+.belief-banner p {
+    font-size: 22px;
+    margin: 25px 0 0 8px
+}
+
+.identity {
+    height: 1957px;
+    background: #fff
+}
+
+.identity .inner {
+    padding-top: 84px;
+    text-align: center
+}
+
+.eyebrow {
+    text-align: left;
+    border-bottom: 1px solid #3d281f;
+    padding-bottom: 10px;
+    font: 600 15px MaruBuri, serif
+}
+
+.identity h2 {
+    font: 600 60px MaruBuri, serif;
+    margin-top: 80px
+}
+
+.identity h3 {
+    font: 600 40px MaruBuri, serif;
+    color: #5f5957
+}
+
+.identity-intro {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 28px
+}
+
+.logo-system {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 80px
+}
+
+.logo-system img {
+    width: 581px;
+    height: 349px
+}
+
+.identity h4 {
+    font: 600 22px MaruBuri, serif;
+    margin-top: 72px
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 55px;
+    text-align: left
+}
+
+.colors>div {
+    width: 247px
+}
+
+.colors i {
+    display: block;
+    width: 247px;
+    height: 100px;
+    margin-bottom: 22px
+}
+
+.colors b,
+.colors small {
+    display: block
+}
+
+.colors small {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 5px
+}
+
+.cream {
+    background: #fdfaeb
+}
+
+.brown {
+    background: #3d281f
+}
+
+.philosophy-title {
+    font-size: 48px !important;
+    margin-top: 110px !important
+}
+
+.philosophy {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 60px
+}
+
+.philosophy article {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.philosophy article::after{
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 1.3px;
+    background-color: #383636;
+    margin-top: 14px;
+}
+
+.philosophy article:nth-child(1) {
+    background: #E5DBC9
+}
+
+.philosophy article:nth-child(2) {
+    background: #fdfaebb3;
+    position: relative;
+    z-index: 9;
+}
+
+.philosophy article:nth-child(3) {
+    background: #9f897fda
+}
+
+.philosophy img {
+    width: 54px;
+    height: 45px
+}
+
+.philosophy h5 {
+    font: 600 20px MaruBuri, serif;
+    margin: 12px 0
+}
+
+.philosophy p {
+    font-size: 16px;
+    line-height: 1.6
+}
+
+.about-end {
+    height: 499px;
+    background: url('../assets/img/about/visual3.png') center/cover no-repeat;
+    text-align: center;
+    padding-top: 325px
+}
+
+.about-end h2 {
+    font: 40px MaruBuri, serif
+}
+
+.about-end p {
+    font-size: 18px;
+    margin-top: 12px
+}
+
+/* ABOUT hero: Figma frame 2371:47 */
+.hero-copy {
+    position: relative;
+    padding-top: 0
+}
+
+.hero-copy h1 {
+    position: absolute;
+    top: 126px;
+    left: 0;
+    width: 100%
+}
+
+.hero-guide {
+    position: absolute;
+    top: 210px;
+    left: 150px;
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left
+}
+
+.hero-guide b {
+    font: 600 15px MaruBuri, serif;
+    white-space: nowrap;
+    margin-right: 10px
+}
+
+.hero-guide i {
+    display: block;
+    height: 1px;
+    background: #3d281f;
+    flex: 1;
+    opacity: .75
+}
+
+.hero-tabs {
+    position: absolute;
+    top: 234px;
+    left: 0;
+    width: 100%;
+    gap: 104px;
+    margin-top: 0
+}
+
+.hero-copy>p {
+    position: absolute;
+    top: 558px;
+    left: 0;
+    width: 100%;
+    margin-top: 0
+}
+
+.hero-copy em {
+    margin-left: 0
+}
+
+.story-one {
+    left: 290px
+}
+
+.story-two {
+    right: 0
+}
+
+.belief {
+    height: 834px;
+    padding-top: 0
+}
+
+.belief-title {
+    height: 248px;
+    padding-top: 70px
+}
+
+.belief-title h2 {
+    font-size: 48px;
+    font-weight: 500
+}
+
+.belief-title img {
+    width: 193px;
+    height: 21px;
+    margin: 17px auto 0
+}
+
+.belief-title span {
+    margin-top: 2px;
+    font-size: 14px
+}
+
+.belief-banner h3 {
+    font-family: 'Cormorant Upright', MaruBuri, serif;
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 76px
+}
+
+.belief-banner p {
+    margin-top: 24px
+}
+
+.identity .inner {
+    position: relative;
+    padding-top: 110px
+}
+
+.identity-seal {
+    width: 82px;
+    height: 71px;
+    margin: 0 auto 15px
+}
+
+.identity .eyebrow {
+    height: 27px;
+    padding-bottom: 10px
+}
+
+.identity h2 {
+    margin-top: 22px
+}
+
+.identity h3 {
+    margin-top: 4px
+}
+
+.identity-intro {
+    margin-top: 25px
+}
+
+.identity .logo-system-title {
+    margin-top: 45px
+}
+
+.logo-system {
+    margin-top: 30px
+}
+
+.philosophy {
+    gap: 0
+}
+
+.philosophy article+article {
+    margin-left: -30px
+}

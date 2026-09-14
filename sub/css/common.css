@@ -1,0 +1,228 @@
+@font-face {
+    font-family: MaruBuri;
+    src: url('https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2')
+}
+
+@font-face {
+    font-family: MaruBuri;
+    src: url('https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2');
+    font-weight: 600
+}
+
+@font-face {
+    font-family: SUIT;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+}
+
+@font-face {
+    font-family: SUIT;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2');
+    font-weight: 300
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,
+body {
+    min-width: 1560px;
+    color: #3d281f;
+    font-family: SUIT, Arial, sans-serif
+}
+
+body {
+    font-size: 16px
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+ul {
+    list-style: none
+}
+
+img {
+    display: block
+}
+
+.wrap {
+    min-width: 1560px;
+    overflow: hidden
+}
+
+.inner {
+    width: 1500px;
+    margin: 0 auto
+}
+
+.site-header {
+    height: 100px;
+    background: #fff;
+    position: relative;
+    z-index: 20
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    font-family: MaruBuri, serif;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.nav .logo {
+    width: 184px;
+    height: 50px;
+    margin: 0 68px
+}
+
+.nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.nav a {
+    position: relative
+}
+
+/* .nav a:not(.logo)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -8px;
+    height: 1px;
+    background: #3d281f;
+    transition: .35s
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+    right: 0
+} */
+
+.site-footer {
+    height: 266px;
+    background: #3d281f;
+    color: rgba(255, 255, 255, .45)
+}
+
+.membership {
+    height: 71px;
+    background: #715945;
+    color: #fdfaeb
+}
+
+.membership .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px
+}
+
+.membership span:first-child {
+    margin-left: 234px
+}
+
+.membership span:nth-child(2) {
+    margin-left: 105px
+}
+
+.membership a {
+    margin-left: auto;
+    margin-right: 192px;
+    color: #c5714b;
+    font-weight: 700
+}
+
+.footer-main {
+    height: 195px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 48px
+}
+
+.footer-slogan {
+    margin-left: 185px;
+    color: #fdfaeb;
+    font: 600 22px MaruBuri, serif
+}
+
+.footer-info {
+    margin-left: 53px;
+    font-size: 12px;
+    line-height: 26px
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px
+}
+
+.copyright {
+    font: 13px MaruBuri, serif
+}
+
+.social {
+    margin-left: auto;
+    margin-right: 170px;
+    display: flex;
+    gap: 17px
+}
+
+.social img {
+    width: 28px;
+    height: 28px
+}
+
+.reveal,
+.scroll-reveal {
+    opacity: 0;
+    transition: opacity .8s cubic-bezier(.22, 1, .36, 1), transform .8s cubic-bezier(.22, 1, .36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform
+}
+
+.scroll-reveal.reveal-up,
+.scroll-reveal.reveal-left,
+.scroll-reveal.reveal-right {
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(.22, 1, .36, 1);
+    transition-delay: var(--reveal-delay, 0ms)
+}
+
+.reveal-up {
+    transform: translate3d(0, 32px, 0)
+}
+
+.reveal-left {
+    transform: translate3d(-32px, 0, 0)
+}
+
+.reveal-right {
+    transform: translate3d(32px, 0, 0)
+}
+
+.reveal.is-visible,
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none
+    }
+}

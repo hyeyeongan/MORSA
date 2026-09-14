@@ -1,0 +1,119 @@
+.menu-hero {
+    height: 240px;
+    background: url('../assets/img/menu/visual1.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding-top: 72px
+}
+
+.menu-hero h1 {
+    font: 36px MaruBuri, serif
+}
+
+.menu-hero p {
+    font: 15px MaruBuri, serif;
+    margin-top: 7px
+}
+
+.menu-content {
+    padding-top: 100px;
+    padding-bottom: 97px
+}
+
+.menu-section {
+    height: 790px
+}
+
+.category {
+    height: 365px;
+    position: relative;
+    padding: 70px 0 0 0
+}
+
+.category h2 {
+    font: 40px MaruBuri, serif
+}
+
+.category p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 25px
+}
+
+.category-illust {
+    position: absolute;
+    width: auto;
+    max-height: 204px;
+    left: 370px;
+    top: 80px
+}
+
+.category-main {
+    position: absolute;
+    object-fit: contain
+}
+
+.bread-main {
+    width: 741px;
+    height: 432px;
+    right: 15px;
+    top: -30px
+}
+
+.fruit-main {
+    width: 575px;
+    height: 397px;
+    right: 80px;
+    top: -25px
+}
+
+.beverage-main {
+    width: 615px;
+    height: 461px;
+    right: 60px;
+    top: -70px
+}
+
+.fruit-illust {
+    left: 350px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px
+}
+
+.product-card {
+    height: 355px;
+    background: #fdfaeb;
+    border-radius: 26px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: .35s
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 30px rgba(61, 40, 31, .12)
+}
+
+.product-card img {
+    height: 245px;
+    max-width: 300px;
+    object-fit: contain;
+    margin: 5px auto 0;
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, .18))
+}
+
+.product-card h3 {
+    font-size: 17px;
+    font-weight: 400
+}
+
+.product-card p {
+    font: 15px MaruBuri, serif;
+    color: #c5714b;
+    margin-top: 8px
+}
