@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const topButton = document.createElement('button');
+  topButton.type = 'button';
+  topButton.className = 'top-button';
+  topButton.setAttribute('aria-label', '페이지 맨 위로 이동');
+  topButton.innerHTML = '<span aria-hidden="true">↑</span>TOP';
+  document.body.appendChild(topButton);
+
+  const updateTopButton = () => {
+    topButton.classList.toggle('is-visible', window.scrollY > 300);
+  };
+
+  window.addEventListener('scroll', updateTopButton, { passive: true });
+  topButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    });
+  });
+  updateTopButton();
+
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const groups = [
     ['.story-grid > *', ['reveal-up']],
@@ -14,8 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ['.source-copy', ['reveal-left']],
     ['.source-icons', ['reveal-right']],
     ['.source > span', ['reveal-up']],
-    ['.menu-section, .product-card, .filters, .event-item', ['reveal-up']],
-    ['.membership .inner, .footer-main', ['reveal-up']]
+    ['.menu-section, .product-card, .filters, .event-item', ['reveal-up']]
   ];
   const animated = [];
 
